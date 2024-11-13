@@ -13,7 +13,7 @@ const app=express();
 app.use(cors({
     //tambien podemos especificar desde que sitios tiene permitido comunicarse y las credenciales en true para establecer las cabeceras en el navegador (incluyendo cookies)
     //origin:"http://localhost:5173",
-    origin:"https://187.221.137.0:5173",
+    origin:"http://187.221.137.0:5173",
     credentials:true
 }));
 //express.json() es para que express pueda recibir datos en formato JSON
