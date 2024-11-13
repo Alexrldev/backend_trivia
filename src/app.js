@@ -13,7 +13,7 @@ const app=express();
 app.use(cors({
     //tambien podemos especificar desde que sitios tiene permitido comunicarse y las credenciales en true para establecer las cabeceras en el navegador (incluyendo cookies)
     //origin:"http://localhost:5173",
-    origin:"https://alexrldev.github.io/",
+    origin:"https://alexrldev.github.io",
     credentials:true
 }));
 //app.use(cors());
