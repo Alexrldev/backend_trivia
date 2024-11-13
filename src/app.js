@@ -19,7 +19,7 @@ const app=express();
 app.use(cors());
 app.use((req,res)=>
     {
-     res.header("Access-Control-Allow-Origin", "http://187.221.137.0:5173");   
+     res.header("Access-Control-Allow-Origin", "*");   
     });
 //express.json() es para que express pueda recibir datos en formato JSON
 app.use(express.json());
