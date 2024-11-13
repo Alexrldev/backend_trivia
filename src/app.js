@@ -17,6 +17,10 @@ const app=express();
     credentials:true
 }));*/
 app.use(cors());
+app.use((req,res)=>
+    {
+     res.header("Access-Control-Allow-Origin", "http://187.221.137.0:5173");   
+    });
 //express.json() es para que express pueda recibir datos en formato JSON
 app.use(express.json());
 //para poder leer y manipular cookies, creo
