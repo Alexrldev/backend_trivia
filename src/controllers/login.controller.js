@@ -18,7 +18,7 @@ export const registroUsu= async(req, res)=>
 
         const token= await createAccesToken({id:usuarioLoginSaved._id});
         //nombre de la cookie, su info
-        res.cookie("token",token);
+        res.cookie("token",token, {sameSite:'none', secure:true});
         res.send("Usuario creado");
 
        /* jwt.sign({id:usuarioLoginSaved._id}, "secret",{expiresIn:"1d"}, (err,token)=>
