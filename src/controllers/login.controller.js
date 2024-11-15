@@ -22,7 +22,7 @@ export const registroUsu= async(req, res)=>
         res.cookie("token",token, {httpOnly:true, sameSite:"none", secure:true});
         res.send("Usuario creado");
 
-       /* jwt.sign({id:usuarioLoginSaved._id}, "secret",{expiresIn:"1d"}, (err,token)=>
+       /* jwt.sign({id:usuarioLoginSaved._id}, TOKEN_SECRET,{expiresIn:"1d"}, (err,token)=>
         {
             if(err)
                 console.log(err);
