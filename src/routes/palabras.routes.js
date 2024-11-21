@@ -7,11 +7,11 @@ const router= Router()
 
 router.get('/palhome', getPalabras);
 
-router.get('/palabras', authRequired, getPalabras);
-router.get('/palabras/:id', authRequired,validarParametros, getPalabra );
-router.post('/palabras', authRequired, validarPost, createPalabra );
-router.delete('/palabras/:id', authRequired, validarParametros, deletePalabra );
-router.put('/palabras/:id', authRequired, validarParametros, updatePalabra);
+router.get('/palabras', /*authRequired,*/ getPalabras);
+router.get('/palabras/:id', /*authRequired,*/validarParametros, getPalabra );
+router.post('/palabras', /*authRequired,*/ validarPost, createPalabra );
+router.delete('/palabras/:id', /*authRequired,*/ validarParametros, deletePalabra );
+router.put('/palabras/:id', /*authRequired,*/ validarParametros, updatePalabra);
 //router.get('/diez', palabrasAlea);
 
 
